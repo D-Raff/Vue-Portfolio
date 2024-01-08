@@ -1,5 +1,5 @@
 <template>
-  <Navbar>
+  <Navbar class="Nav">
     <template #HomeBtn>
       <router-link to="/">Home</router-link> |
     </template>
@@ -23,16 +23,18 @@
     <router-view/>
   </main>
 
-
+  <Footer/>
 </template>
 
 <script>
+import Footer from './components/Footer.vue';
 import Navbar from './components/Navbar.vue';
 
 export default{
-name: 'App',
-components: {
-  Navbar
+  name: 'App',
+  components: {
+    Navbar,
+    Footer
 
 }
 
@@ -54,19 +56,23 @@ components: {
   background: black;
 }
 
-nav {
-  padding: 30px;
+Nav {
+  font-family: 'Iceland', sans-serif;
 }
 
-nav a {
+Nav a {
+  font-size: 20px;
   text-decoration: none;
   font-weight: bold;
   color: #67c7eb;
-  text-shadow: 1px 1px 3px #7bc9e6;
 }
 
-nav a.router-link-exact-active {
+Nav li :hover{
+  text-shadow: 0px 0px 3px #7bc9e6;
+}
+
+Nav a.router-link-exact-active {
   color: #AA0505;
-  text-shadow: 1px 1px 3px #7bc9e6;
+  text-shadow: 0px 0px 3px #7bc9e6;
 }
 </style>

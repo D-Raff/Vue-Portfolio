@@ -53,19 +53,12 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display&display=swap");
+
 .main-nav {
     background: black;
     height: 5em;
-}
-
-.navbar-brand {
-    color: white;
-}
-
-.nav-link {
-    color: #67c7eb;
-    text-shadow: 2px 2px 3px #7bc9e6;
 }
 
 img[alt='nav-icon'] {
@@ -75,6 +68,9 @@ img[alt='nav-icon'] {
 
 }
 
+.nav-list{
+    gap: 5px;
+}
 .navbar-nav{
     gap: 5px;
 }
