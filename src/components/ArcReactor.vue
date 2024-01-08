@@ -387,6 +387,8 @@ export default {
     height: 50%;
     aspect-ratio: 1/1;
     z-index: 2;
+    /* transform-style: preserve-3d;
+    transform: perspective(500) rotateX('60deg'); */
 }
 
 .core-ring2 {
