@@ -4,7 +4,273 @@
             <div class="flux-container"></div>
             <div class="flux"></div>
 
-            <div class="mag-cores"></div>
+            <div class="mag-core">
+
+                <div class="mag-core-twins">
+
+                    <div class="magnet-core-1">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                    <div class="magnet-core-2">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                </div>
+
+                <div class="mag-core-twins-2">
+
+                    <div class="magnet-core-1">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                    <div class="magnet-core-2">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                </div>
+
+                <div class="mag-core-twins-3">
+
+                    <div class="magnet-core-1">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                    <div class="magnet-core-2">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                </div>
+
+                <div class="mag-core-twins-4">
+
+                    <div class="magnet-core-1">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                    <div class="magnet-core-2">
+                        <div class="mag-border"></div>
+
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+                        <span class="mag-coils"></span>
+
+                        <div class="mag-border"></div>
+                    </div>
+
+                </div>
+
+            </div>
 
             <div class="back-glow"></div>
 
@@ -31,7 +297,6 @@
                 <span class="copper-ring3"></span>
                 <span class="copper-ring4"></span>
                 <span class="copper-ring5"></span>
-                <span class="copper-ring6"></span>
             </div>
             <div class="inner-core">
                 <span class="core-ring"></span>
@@ -64,7 +329,6 @@ export default {
     align-items: center;
 }
 
-
 .reactor {
     position: relative;
     height: 800px;
@@ -90,7 +354,8 @@ export default {
     border-radius: 50%;
     height: 80%;
     aspect-ratio: 1/1;
-    box-shadow: 0px 0px 16px 1.5px #93e1fd
+    box-shadow: 0px 1px 16px 1.5px #93e1fd;
+    animation: flux 100ms infinite;
 }
 
 .back-glow {
@@ -123,6 +388,7 @@ export default {
     aspect-ratio: 1/1;
     z-index: 2;
 }
+
 .core-ring2 {
     background-color: #67c7eb;
     position: absolute;
@@ -296,11 +562,105 @@ export default {
     opacity: 40%;
 }
 
+
+.mag-core {
+    z-index: 4;
+    position: absolute;
+    rotate: 20deg;
+    border-radius: 50%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mag-core-twins {
+    height: 80.8%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mag-core-twins-2 {
+    height: 80.8%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    rotate: 90deg;
+}
+
+.mag-core-twins-3 {
+    height: 80.9%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    rotate: 45deg;
+}
+
+.mag-core-twins-4 {
+    height: 80.8%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    rotate: 135deg;
+}
+
+.magnet-core-1 {
+    z-index: 1;
+    width: 5em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(-60deg);
+}
+
+.magnet-core-2 {
+    z-index: 1;
+    width: 5em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(60deg);
+}
+
+.mag-border {
+    width: 10%;
+    height: 210%;
+    background: black;
+    z-index: 2;
+}
+
+.mag-coils {
+    z-index: 1;
+    background: #71291d;
+    height: 178%;
+    width: 5px;
+    border-radius: 15%;
+}
+
+
+
+
 @keyframes flux {
     from {
         rotate: 0deg;
     }
-    
+
     to {
         rotate: 360deg;
     }
