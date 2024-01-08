@@ -67,10 +67,6 @@ Nav a {
   color: #67c7eb;
 }
 
-Nav li :hover{
-  text-shadow: 0px 0px 3px #7bc9e6;
-}
-
 Nav a.router-link-exact-active {
   color: #AA0505;
   text-shadow: 0px 0px 3px #7bc9e6;
