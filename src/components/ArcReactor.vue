@@ -322,8 +322,8 @@ export default {
 
 <style>
 .mainComp {
-    min-height: 100vh;
-    width: 100vw;
+    min-height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,7 +336,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: transparent;
 }
 
 .flux {
@@ -346,7 +346,7 @@ export default {
     height: 70%;
     aspect-ratio: 1/1;
     box-shadow: 0px 2px 16px 32px #93e1fd, inset 0px 0px 0px 10px #a6def3;
-    animation: flux 100ms infinite;
+    animation: flux 100ms ease 1s infinite;
 }
 
 .flux-container {
@@ -356,6 +356,7 @@ export default {
     aspect-ratio: 1/1;
     box-shadow: 0px 1px 16px 1.5px #93e1fd;
     animation: flux 100ms infinite;
+    animation-delay: 2s;
 }
 
 .back-glow {
@@ -661,9 +662,12 @@ export default {
 @keyframes flux {
     from {
         rotate: 0deg;
+        
     }
 
     to {
         rotate: 360deg;
     }
-}</style>
+}
+
+</style>
