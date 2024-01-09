@@ -23,7 +23,7 @@
     <router-view/>
   </main>
 
-  <Footer/>
+  <Footer class="footer"/>
 </template>
 
 <script>
@@ -51,11 +51,14 @@ export default{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  min-height: 100vh;
+  height: 100%;
   width: 100vw;
   background: black;
+  overflow: hidden;
 }
-
+main{
+  height: 100vh;
+}
 Nav {
   font-family: 'Iceland', sans-serif;
 }
@@ -67,12 +70,13 @@ Nav a {
   color: #67c7eb;
 }
 
-Nav li :hover{
-  text-shadow: 0px 0px 3px #7bc9e6;
-}
-
 Nav a.router-link-exact-active {
   color: #AA0505;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
 </style>

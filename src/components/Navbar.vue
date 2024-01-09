@@ -68,6 +68,9 @@ img[alt='nav-icon'] {
 
 }
 
+nav li :hover{
+  text-shadow: 0px 0px 3px #7bc9e6;
+}
 .nav-list{
     gap: 5px;
 }
