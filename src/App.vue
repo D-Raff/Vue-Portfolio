@@ -51,16 +51,22 @@ export default{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   background: black;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-main{
-  height: 100vh;
-}
-Nav {
+
+.Nav {
   font-family: 'Iceland', sans-serif;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  animation: fade 1s ease-in 6s 1 forwards;
+  visibility: hidden;
 }
 
 Nav a {
@@ -77,6 +83,20 @@ Nav a.router-link-exact-active {
 
 body::-webkit-scrollbar{
   display: none;
+}
+
+.footer{
+  animation: fade 1s ease-in 6s 1 forwards;
+  visibility: hidden;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0%;
+  }
+  to{
+    visibility: visible;
+  }
 }
 
 </style>
