@@ -3,9 +3,7 @@ const dataUrl = 'https://d-raff.github.io/VueJS-Portfolio-data/data/'
 
 export default createStore({
   state: {
-    profilePhoto: null,
     jobTitle: null,
-    about: null,
     education: null,
     skills: null,
     testimonials: null,
@@ -38,6 +36,15 @@ export default createStore({
         let {jobTitle} = await res.json()
         // once the value is updated, it saves the value using commit
         context.commit('setjobTitle', jobTitle)
+      } catch (error) {
+        error
+      }
+    },
+    async fetcheducation(context){
+      try {
+        let res = await fetch(dataUrl)
+        let {education} = await res.json()
+        context.commit('seteducation', education)
       } catch (error) {
         error
       }
