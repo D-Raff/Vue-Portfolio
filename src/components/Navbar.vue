@@ -57,7 +57,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display&display=swap");
 
 .main-nav {
-    background: black;
+    background: transparent;
     height: 5em;
 }
 
