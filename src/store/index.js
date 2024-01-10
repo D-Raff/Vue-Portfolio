@@ -14,15 +14,8 @@ export default createStore({
   getters: {
   },
   mutations: {
-    setprofilePhoto(state, value){
-      // state allows us to access any variable defined inside of state. to update the state, we assign a new value using mutations
-      state.profilePhoto = value
-    },
     setjobTitle(state, value){
       state.jobTitle = value
-    },
-    setabout(state, value){
-      state.about = value
     },
     seteducation(state, value){
       state.education = value
@@ -38,21 +31,17 @@ export default createStore({
     },
   },
   actions: {
-    // create a functions that allows us to fetch data
-    // async fetchprofilePhoto(context){
-      
-    // },
+    // create a function that allows us to fetch data
     async fetchjobTitle(context){
-      let res = await fetch(dataUrl)
-      console.log(res);
-      let {jobTitle} = await res.json()
-      // once the value is updated, it saves the value using commit
-      context.commit('setjobTitle', jobTitle)
+      try {
+        let res = await fetch(dataUrl)
+        let {jobTitle} = await res.json()
+        // once the value is updated, it saves the value using commit
+        context.commit('setjobTitle', jobTitle)
+      } catch (error) {
+        error
+      }
     },
-    async fetchabout(context){
-      let {about} = await (await fetch(dataUrl)).json()
-      context.commit('setabout', about)
-    }
   },
   modules: {
   }

@@ -1,9 +1,12 @@
 <template>
   <div class="home">
+    <img src="https://drive.google.com/uc?id=10lrHOC5VSRhxg_9rCn0n36eCpbK6o9Ub" alt="profilePhoto">
     <div class="info" >
-      <p class="lead" v-for="work in jobTitle" :key="work.title">
+    <p class="Name">I Am Damon Raffels</p>
+    <p v-if="jobTitle" class="titles">Aspiring <span class="lead" v-for="work in jobTitle" :key="work.title">
         {{ work.title }}
-      </p>
+      </span></p>
+      
     </div>
     <div class="reactor-div">
       <ArcReactor class="reactor"/>
@@ -34,14 +37,15 @@ export default {
 }
 </script>
 
-<style>
+<style >
 .home{
   display: flex;
   justify-content: center;
+  background: black;
 }
 .reactor-div{
   animation: fade-in 2s ease-in;
-  height: 700px;
+  height: 600px;
   width: fit-content;
   position: absolute;
   justify-content: center;
@@ -53,20 +57,56 @@ export default {
   height: 100%;
 }
 .info{
-  border: 3px solid blue;
   height: 100px;
-  width: 200px;
+  width: 40%;
   position: relative;
+  color: white;
+  font-family: 'Iceland', sans-serif;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+  animation: fade 2s ease-in 5s 1 forwards;
+}
+.Name{
+  font-size: 50px;
+  margin: 0;
+}
+.titles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .lead{
   color: aliceblue;
   position: relative;
   z-index: 1;
+  color: #AA0505;
+}
+
+img[alt='profilePhoto']{
+  height: 500px;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  visibility: hidden;
+  animation: fade 2s ease-in 6s 1 forwards;
 }
 
 @keyframes fade-in {
   from {
     opacity: 50%;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0%;
+  }
+  to{
+    visibility: visible;
   }
 }
 
@@ -80,9 +120,9 @@ export default {
   
   to {
     transform: translateX(100px);
-    height: 80%;
-    bottom: 3%;
-    left: 10%;
+    height: 65%;
+    aspect-ratio: 1/1;
+    left: 15%;
   }
 }
 </style>
