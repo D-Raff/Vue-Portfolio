@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="https://drive.google.com/uc?id=10lrHOC5VSRhxg_9rCn0n36eCpbK6o9Ub" alt="profilePhoto">
+    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYQwtyfuvZe-I1s254REMpUQXYgFpWKc_mucuoY7QzUdt5cvQr_U7uZ6Hw8HflkoLi1mjjyzuMn8ZK1f0rFCbkHR06XWHA=w1920-h868" alt="profilePhoto">
     <div class="info" >
     <p class="Name">I Am Damon Raffels</p>
     <p v-if="jobTitle" class="titles">Aspiring <span class="lead" v-for="work in jobTitle" :key="work.title">

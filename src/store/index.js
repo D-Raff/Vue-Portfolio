@@ -49,6 +49,15 @@ export default createStore({
         error
       }
     },
+    async fetchskills(context){
+      try {
+        let res = await fetch(dataUrl)
+        let {skills} = await res.json()
+        context.commit('setskills', skills)
+      } catch (error) {
+        error
+      }
+    },
   },
   modules: {
   }
