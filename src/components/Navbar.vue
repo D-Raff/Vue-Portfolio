@@ -39,7 +39,7 @@
           </ul>
           <a class="navbar-brand" href="#"
             ><img
-              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYQCtiTGPqkZ0Eq6fe5E8qB9eGMlMs-drA0v2YqBosmCNLXxAkoGaiuuble0n-pSLtytsLDZbySqIP_nM9ekZ2azQQiDfA=w1920-h868"
+              src="https://i.ibb.co/9V3qpSH/klipartz-com.png"
               alt="nav-icon"
           /></a>
         </div>
