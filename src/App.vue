@@ -20,23 +20,23 @@
     </template>
   </Navbar>
   <main>
-    <router-view/>
+    <router-view />
   </main>
 
-  <Footer class="footer"/>
+  <Footer class="footer" />
 </template>
 
 <script>
 import Footer from './components/Footer.vue';
 import Navbar from './components/Navbar.vue';
 
-export default{
+export default {
   name: 'App',
   components: {
     Navbar,
     Footer
 
-}
+  }
 
 }
 
@@ -51,10 +51,10 @@ export default{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background: black;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,22 +81,23 @@ Nav a.router-link-exact-active {
   text-shadow: 0px 0px 3px #7bc9e6;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
-.footer{
+.footer {
   animation: fade 1s ease-in 6s 1 forwards;
   visibility: hidden;
+  background: black;
 }
 
 @keyframes fade {
   from {
     opacity: 0%;
   }
-  to{
+
+  to {
     visibility: visible;
   }
 }
-
 </style>

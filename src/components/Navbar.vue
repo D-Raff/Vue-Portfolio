@@ -39,7 +39,7 @@
           </ul>
           <a class="navbar-brand" href="#"
             ><img
-              src="https://drive.google.com/uc?id=1_vrEddnSJhuf9g8Ff3OmoXg77iP5mvab"
+              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYQCtiTGPqkZ0Eq6fe5E8qB9eGMlMs-drA0v2YqBosmCNLXxAkoGaiuuble0n-pSLtytsLDZbySqIP_nM9ekZ2azQQiDfA=w1920-h868"
               alt="nav-icon"
           /></a>
         </div>
@@ -57,7 +57,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display&display=swap");
 
 .main-nav {
-    background: black;
+    background: transparent;
     height: 5em;
 }
 
