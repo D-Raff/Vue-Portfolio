@@ -56,6 +56,7 @@ export default {
   background: black;
   /* overflow: hidden; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 }
