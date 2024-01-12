@@ -31,8 +31,8 @@
             <div class="contact-me">
                 <h2>Contact Me</h2>
                 <span>Phone: 0827881888</span>
-                <span>Email: damonraffels@gmail.com</span>
-                <span>GitHub:</span>
+                <span><a href="damonraffels@gmail.com">Email: damonraffels@gmail.com</a></span>
+                <span>GitHub: </span>
                 <span>Instagram:</span>
                 <span>LinkedIn:</span>
             </div>
@@ -85,11 +85,17 @@ form {
     box-shadow: 0px 0px 8px 2px #7bc9e6;
 }
 .contact-me{
+    position: relative;
+    left: 50%;
     border: #0088ff 3px solid;
     z-index: 1;
     height: 400px;
     width: 300px;
     animation: glow 1s ease-in 3s 1 forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
@@ -202,6 +208,10 @@ form button {
     border-top: 26px solid #00000000;
     border-bottom: 26px solid #00000000;
     animation: jarv 1s linear infinite reverse;
+}
+
+span a {
+    text-decoration: none;
 }
 
 @keyframes jarv {
