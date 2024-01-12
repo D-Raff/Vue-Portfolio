@@ -30,11 +30,11 @@
             </div>
             <div class="contact-me">
                 <h2>Contact Me</h2>
-                <span>Phone: 0827881888</span>
-                <span><a href="damonraffels@gmail.com">Email: damonraffels@gmail.com</a></span>
-                <span>GitHub: </span>
-                <span>Instagram:</span>
-                <span>LinkedIn:</span>
+                <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon">Phone: 0827881888</span>
+                <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon">Email: damonraffels@gmail.com</a></span>
+                <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon">GitHub</a></span>
+                <span><a href="https://www.instagram.com/damon.raffels/"><img src="https://i.ibb.co/h90xBGB/instagram-4-512.png" alt="icon">Instagram</a></span>
+                <span><a href="https://www.linkedin.com/in/damonraffels"><img src="https://i.ibb.co/9nWVPKv/kisspng-computer-icons-linkedin-5aff0283e54964-1704227815266617639392.png" alt="icon"> LinkedIn</a></span>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
-.Contact{
+.Contact {
     min-height: 80vh;
     width: 100vw;
     margin-top: 5em;
@@ -63,11 +63,13 @@ export default {
     justify-content: center;
     align-items: center;
 }
+
 .c-info {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -84,7 +86,8 @@ form {
     animation: glow 1s ease-in 3s 1 forwards;
     box-shadow: 0px 0px 8px 2px #7bc9e6;
 }
-.contact-me{
+
+.contact-me {
     position: relative;
     left: 50%;
     border: #0088ff 3px solid;
@@ -96,6 +99,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em;
 }
 
 label {
@@ -104,7 +108,7 @@ label {
     color: #B97D10;
 }
 
-:is(input, textarea){
+:is(input, textarea) {
     border: #B97D10 3px solid;
     border-radius: 10px;
     background: #AA0505;
@@ -114,6 +118,7 @@ label {
     align-items: center;
 
 }
+
 form button {
     width: 50px;
     border: #B97D10 3px solid;
@@ -210,6 +215,18 @@ form button {
     animation: jarv 1s linear infinite reverse;
 }
 
+h2 {
+    font-family: iceland;
+    font-size: 40px;
+    color: #67C7EB;
+    text-shadow: 0px 0px 3px #7bc9e6;
+}
+
+span {
+    color: #7bc9e6;
+
+}
+
 span a {
     text-decoration: none;
 }
@@ -232,5 +249,4 @@ span a {
     100% {
         transform: rotate(405deg);
     }
-}
-</style>
+}</style>
