@@ -23,7 +23,7 @@ export default {
     text-align: center;
     font-family: 'Iceland', sans-serif;
     color: #B97D10;
-    height: 4em;
+    height: 3em;
     align-items: end;
     justify-content: center;
     display: flex;

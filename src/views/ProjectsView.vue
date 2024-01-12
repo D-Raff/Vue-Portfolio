@@ -52,10 +52,9 @@ export default {
     align-items: center;
 }
 .row{
-    border: #67C7EB 3px solid;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    width:90%;
 }
 
 .proj-card {
@@ -69,7 +68,7 @@ export default {
 .p-body {
     border: 3px solid #AA0505;
     border-radius: 10px;
-    height: 100%;
+    min-height: 350px;
     width: 100%;
     padding: 10px;
     display: flex;

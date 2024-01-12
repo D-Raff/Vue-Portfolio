@@ -37,11 +37,10 @@
                 <slot name = "ContactBtn"></slot>
             </li>
           </ul>
-          <a class="navbar-brand" href="#"
-            ><img
+          <router-link to="/" class="navbar-brand"><img
               src="https://i.ibb.co/9V3qpSH/klipartz-com.png"
               alt="nav-icon"
-          /></a>
+          /></router-link>
         </div>
       </div>
     </nav>
