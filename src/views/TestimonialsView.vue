@@ -51,7 +51,8 @@ export default {
     min-height: 100%;
     width: 90%;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .test-card {

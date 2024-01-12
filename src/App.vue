@@ -89,6 +89,7 @@ body::-webkit-scrollbar {
   animation: fade 1s ease-in 6s 1 forwards;
   visibility: hidden;
   background: black;
+  z-index: 1;
 }
 
 @keyframes fade {
