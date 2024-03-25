@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="https://i.ibb.co/5k1CD6K/Clipped-image-20240109-121729.png" alt="profilePhoto">
+    <img src="https://iili.io/JhDRlWB.png" alt="profilePhoto">
     <div class="info">
       <p class="Name">I Am Damon Raffels</p>
       <p v-if="jobTitle" class="titles">Aspiring <span class="lead" v-for="work in jobTitle" :key="work.title">

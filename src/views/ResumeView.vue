@@ -178,6 +178,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 3s ease-in-out;
 }
 
 .card-body {
