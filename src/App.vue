@@ -19,9 +19,8 @@
       <router-link to="/contact">Contact Me</router-link>
     </template>
   </Navbar>
-  <main>
-    <router-view />
-  </main>
+
+  <router-view />
 
   <Footer class="footer" />
 </template>
@@ -47,16 +46,17 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&display=swap');
+
 #app {
   font-family: marvel, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  min-height: 100vh;
+  min-height: 200vh;
   width: 100vw;
+  box-sizing: border-box;
   background: black;
-  /* overflow: hidden; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -90,7 +90,6 @@ body::-webkit-scrollbar {
 
 .footer {
   animation: fade 1s ease-in 6s 1 forwards;
-  visibility: hidden;
   background: black;
   z-index: 1;
 }
@@ -98,6 +97,7 @@ body::-webkit-scrollbar {
 @keyframes fade {
   from {
     opacity: 0%;
+    visibility: hidden;
   }
 
   to {

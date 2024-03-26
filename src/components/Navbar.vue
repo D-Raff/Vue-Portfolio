@@ -76,4 +76,5 @@ nav li :hover{
 .navbar-nav{
     gap: 5px;
 }
+
 </style>

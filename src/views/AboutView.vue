@@ -234,7 +234,7 @@ export default {
   to {
     border-radius: 0%;
     border: 20px solid rgba(0, 136, 255, 40%);
-    box-shadow: 0px 0px 10px 10px rgba(0, 136, 255, 100%);
+    box-shadow: 0px 0px 10px 8px rgba(0, 136, 255, 40%);
     width: 100%;
     height: 100%;
   }
