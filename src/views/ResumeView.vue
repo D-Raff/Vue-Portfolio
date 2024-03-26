@@ -1,35 +1,37 @@
 <template>
     <div class="resume">
-        <div class="row" v-if="education">
+        <div class="container" id="row" v-if="education">
             <div class="Heading">
                 EDUCATION
             </div>
-            <div class="ed-card" v-for="ed in education" :key="ed.id">
-                <div class="rotate"></div>
-                <div class="card-header">
-                    <h3 class="year">
-                        {{ ed.year }}
-                    </h3>
+            <div class="education">
+                <div class="ed-card" v-for="ed in education" :key="ed.id">
+                    <div class="rotate"></div>
+                    <div class="card-header">
+                        <h3 class="year">
+                            {{ ed.year }}
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-info">
+                            {{ ed.description }}
+                        </div>
+                        <div class="card-info">
+                            <span>Place:</span> {{ ed.place }}
+
+                        </div>
+                        <div class="card-info">
+                            <span>Qualification type:</span> {{ ed.type }}
+                        </div>
+                    </div>
+
+
+
                 </div>
-                <div class="card-body">
-                    <div class="card-info">
-                        {{ ed.description }}
-                    </div>
-                    <div class="card-info">
-                        <span>Place:</span> {{ ed.place }}
-
-                    </div>
-                    <div class="card-info">
-                        <span>Qualification type:</span> {{ ed.type }}
-                    </div>
-                </div>
-
-
-
             </div>
 
         </div>
-        <div class="row-2" v-if="skills">
+        <div class="container" id="row-2" v-if="skills">
             <div class="Heading">
                 SKILLS
             </div>
@@ -49,9 +51,9 @@
                             {{ skill.experience }}
                         </div>
                     </div>
-    
-    
-    
+
+
+
                 </div>
             </div>
 
@@ -79,33 +81,47 @@ export default {
 <style>
 .resume {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: end;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    box-sizing: border-box;
+    gap: 30px;
 }
 
-.row {
-    width: 90%;
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    bottom: 15%;
-}
-.row-2{
+#row {
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0 !important;
+    gap: 20px;
 }
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#row-2 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 .skill-row {
     width: 100%;
-    height: 250px;
-    display: flex !important;
-    justify-content: space-between;
-    position: relative;
-    bottom: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 .Heading {
@@ -118,7 +134,7 @@ export default {
 .ed-card {
     width: 250px !important;
     aspect-ratio: 1/1;
-    background: transparent;
+    background: black;
     border-radius: 50%;
     color: #B97D10;
     text-align: center;
@@ -127,12 +143,13 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 10px;
+    transition: 1s;
 }
 
 .skill-card {
     width: 250px !important;
     aspect-ratio: 1/1;
-    background: transparent;
+    background: black;
     border-radius: 50%;
     color: #B97D10;
     text-align: center;
@@ -141,6 +158,7 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 10px;
+    transition: 1s;
 }
 
 .skill-logo {
@@ -149,7 +167,7 @@ export default {
 }
 
 .rotate {
-    width: 235px;
+    width: 233px;
     aspect-ratio: 1/1;
     position: absolute;
     background: transparent;
@@ -178,6 +196,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 2s;
 }
 
 .card-body {
@@ -186,6 +205,7 @@ export default {
     justify-content: center;
     width: 200px;
     opacity: 0%;
+    font-size: 1.4em;
 }
 
 
@@ -197,6 +217,8 @@ export default {
 
 .ed-card:hover {
     animation: lift 500ms ease 1 forwards;
+    transform: perspective(500px) translateZ(90px);
+    transform-style: preserve-3d;
 
     .card-body {
         visibility: visible;
@@ -212,12 +234,14 @@ export default {
 
     .rotate {
         animation: spin 1s linear infinite;
+        background: black;
 
     }
 }
 
 .skill-card:hover {
-    animation: lift 500ms ease 1 forwards;
+    transform: perspective(500px) translateZ(80px);
+    transform-style: preserve-3d;
 
     .card-body {
         visibility: visible;
@@ -233,21 +257,8 @@ export default {
 
     .rotate {
         animation: spin 1s linear infinite;
+        background: black;
 
-    }
-}
-
-@keyframes lift {
-    to {
-        transform: perspective(500px) translateZ(50px);
-        transform-style: preserve-3d;
-        width: 300px !important;
-        background: transparent;
-        color: #B97D10;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -263,7 +274,7 @@ export default {
 
 @keyframes move {
     to {
-        top: 50px;
+        top: 30px;
     }
 
 }
@@ -272,4 +283,19 @@ export default {
     to {
         opacity: 100%;
     }
-}</style>
+}
+
+@media screen and (max-width: 344px) {
+    .skill-card:hover {
+        transform: perspective(800px) translateZ(10px);
+    }
+}
+@media screen and (max-width: 401px) {
+    .skill-card:hover {
+        transform: perspective(800px) translateZ(10px);
+    }
+    .ed-card:hover{
+        transform: perspective(800px) translateZ(10px);
+    }
+}
+</style>
