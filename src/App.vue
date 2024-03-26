@@ -27,6 +27,7 @@
 </template>
 
 <script>
+
 import Footer from './components/Footer.vue';
 import Navbar from './components/Navbar.vue';
 
@@ -45,8 +46,9 @@ export default {
 
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: marvel, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

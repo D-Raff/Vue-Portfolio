@@ -167,6 +167,8 @@ export default {
 .text{
   color: #0088ff;
   text-align: left;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .information{
@@ -231,7 +233,8 @@ export default {
 
   to {
     border-radius: 0%;
-    border: 20px solid #0088ff;
+    border: 20px solid rgba(0, 136, 255, 40%);
+    box-shadow: 0px 0px 10px 10px rgba(0, 136, 255, 100%);
     width: 100%;
     height: 100%;
   }
