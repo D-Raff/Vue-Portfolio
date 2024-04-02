@@ -53,7 +53,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  min-height: 200vh;
+  min-height: 110vh;
   width: 100vw;
   box-sizing: border-box;
   background: black;

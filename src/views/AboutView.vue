@@ -8,7 +8,7 @@
           <div class="inner"></div>
         </div>
         <div class="about-info">
-          <img src="https://i.ibb.co/6DwxjHh/1000025632.jpg" alt="about-img">
+          <img src="https://i.ibb.co/6DwxjHh/1000025632.jpg" alt="about-img" class="about-img">
           <div class="information">
             <h1 class="head">ABOUT ME</h1>
             <p class="text">
@@ -165,7 +165,7 @@ export default {
   line-height: 25px;
 }
 .text{
-  color: #0088ff;
+  color: #67C7EB;
   text-align: left;
   font-weight: 700;
   font-size: 1.2rem;
@@ -182,18 +182,18 @@ export default {
 .title{
   width: 100%;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   text-shadow: none;
 }
 
 .contact{
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: left;
 }
 .contact span{
-  color: #0088ff;
+  color: #67C7EB;
 }
 .Key{
   color: #FBCA03 !important;
@@ -234,7 +234,7 @@ export default {
   to {
     border-radius: 0%;
     border: 20px solid rgba(0, 136, 255, 40%);
-    box-shadow: 0px 0px 10px 8px rgba(0, 136, 255, 40%);
+    box-shadow: 0px 0px 10px 8px rgba(0, 136, 255, 45%);
     width: 100%;
     height: 100%;
   }
