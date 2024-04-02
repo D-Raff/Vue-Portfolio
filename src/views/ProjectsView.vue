@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <img src="https://i.ibb.co/rkt8SGV/pngwing-com-7.png" alt="background">
-        <div class="row container" v-if="projects">
+        <div class="row" v-if="projects">
             <div class="proj-card" v-for="project in projects" :key="project.name">
 
                 <div class="p-body">
@@ -43,31 +43,23 @@ export default {
 
 <style>
 .projects {
-    position: relative;
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 5em;
     justify-content: center;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width:90%;
-    min-height: 80vh;
-    gap: 1em;
-    margin-top: 5em !important;
 }
 
 .proj-card {
-    flex: 1;
     margin: 10px;
     padding: 20px;
     width: 250px !important;
-    height: 300px;
-    padding: 0 !important;
+    padding: 0;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
@@ -75,8 +67,8 @@ export default {
 .p-body {
     border: 3px solid #AA0505;
     border-radius: 10px;
-    min-height: 350px;
-    width: 100%;
+    height: 350px;
+    width: 250px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
