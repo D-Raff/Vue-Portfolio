@@ -1,5 +1,6 @@
 <template>
   <div class="test-page">
+    <h1>Testimonials</h1>
     <div class="testimonials" v-if="testimonials">
       <div class="test-card" v-for="test in testimonials" :key="test.name">
         <div class="content">
@@ -33,21 +34,22 @@ export default {
 <style scoped>
 .test-page {
   margin-top: 6em;
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .testimonials {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100%;
   width: 90%;
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .test-card {
@@ -57,7 +59,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   color: #fbca03;
-  perspective: 500px;
+  perspective: 580px;
 }
 
 .content {
@@ -66,7 +68,7 @@ export default {
   width: 100%;
   height: 380px;
   border-radius: 10px;
-  /* box-shadow: 0 0 5px 2px #48abe0, 0 0 10px 6px #ebecca, 0 0 20px 10px #8a2be2; */
+  box-shadow: 0 0 5px 2px #aa0505;
   transition: transform 1s;
   transform-style: preserve-3d;
 }
@@ -145,4 +147,12 @@ img[alt="Test-photo"] {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
+h1{
+  font-family: iceland, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #aa0505;
+  text-shadow: 0px 0px 3px #7bc9e6;
+}
+
 </style>
