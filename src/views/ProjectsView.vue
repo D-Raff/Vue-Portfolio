@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
-        <img src="https://i.ibb.co/rkt8SGV/pngwing-com-7.png" alt="background">
-        <div class="row" v-if="projects">
+        <!-- <img src="https://i.ibb.co/rkt8SGV/pngwing-com-7.png" alt="background"> -->
+        <div class="container proj-cont" v-if="projects">
             <div class="proj-card" v-for="project in projects" :key="project.name">
 
                 <div class="p-body">
@@ -43,16 +43,22 @@ export default {
 
 <style>
 .projects {
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 5em;
+    padding-top: 7em;
     justify-content: center;
+    background: url("https://i.ibb.co/rkt8SGV/pngwing-com-7.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-.row{
+.proj-cont{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 4rem;
 }
 
 .proj-card {
