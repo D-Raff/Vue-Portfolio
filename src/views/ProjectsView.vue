@@ -15,7 +15,7 @@
                     </div>
                     <div class="links">
                         <a :href="project.gitHub"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"></a>
-                        <a :href="project.netlify"><img
+                        <a :href="project.link"><img
                                 src="https://i.ibb.co/TL3FP3n/Simpleicons-Team-Simple-Netlify-512.png" alt="icon"></a>
                     </div>
                 </div>

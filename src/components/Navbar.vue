@@ -1,6 +1,6 @@
-<template lang="">
-    <div>
-        <nav class="navbar navbar-expand-lg main-nav navbar-dark">
+<template>
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg main-nav navbar-dark">
       <div class="container-fluid nav-body">
         <button
           class="navbar-toggler"
@@ -19,62 +19,60 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <slot name = "HomeBtn"></slot>
+              <slot name="HomeBtn"></slot>
             </li>
             <li class="nav-item">
-                <slot name = "AboutBtn"></slot>
+              <slot name="AboutBtn"></slot>
             </li>
             <li class="nav-item">
-                <slot name = "ResumeBtn"></slot>
+              <slot name="ResumeBtn"></slot>
             </li>
             <li class="nav-item">
-                <slot name = "ProjectsBtn"></slot>
+              <slot name="ProjectsBtn"></slot>
             </li>
             <li class="nav-item">
-                <slot name = "TestimonialsBtn"></slot>
+              <slot name="TestimonialsBtn"></slot>
             </li>
             <li class="nav-item">
-                <slot name = "ContactBtn"></slot>
+              <slot name="ContactBtn"></slot>
             </li>
           </ul>
-          <router-link to="/" class="navbar-brand"><img
+          <router-link to="/" class="navbar-brand"
+            ><img
               src="https://i.ibb.co/9V3qpSH/klipartz-com.png"
               alt="nav-icon"
           /></router-link>
         </div>
       </div>
     </nav>
-    </div>
+  </div>
 </template>
 <script>
 export default {
-    name: 'NavBarComp'
-
-}
+  name: "NavBarComp",
+};
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display&display=swap");
 
 .main-nav {
-    background: transparent;
-    height: 5em;
+  background: transparent;
+  height: 5em;
 }
 
-img[alt='nav-icon'] {
-    height: 70px;
-    aspect-ratio: 1/1;
-    filter: drop-shadow(0px 0px 1px #67c7eb);
-
+img[alt="nav-icon"] {
+  height: 70px;
+  aspect-ratio: 1/1;
+  filter: drop-shadow(0px 0px 1px #67c7eb);
 }
 
-nav li :hover{
+nav li :hover {
   text-shadow: 0px 0px 3px #7bc9e6;
 }
-.nav-list{
-    gap: 5px;
+.nav-list {
+  gap: 5px;
 }
-.navbar-nav{
-    gap: 5px;
+.navbar-nav {
+  gap: 5px;
 }
-
 </style>

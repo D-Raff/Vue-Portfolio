@@ -32,7 +32,7 @@
                 <h2>Contact Me</h2>
                 <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon"> damonraffels@gmail.com</a></span>
                 <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon"> 0827881888</span>
-                <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon">GitHub</a></span>
+                <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"> GitHub</a></span>
                 <span><a href="https://www.linkedin.com/in/damonraffels"><img src="https://i.ibb.co/9nWVPKv/kisspng-computer-icons-linkedin-5aff0283e54964-1704227815266617639392.png" alt="icon"> LinkedIn</a></span>
             </div>
         </div>
@@ -100,6 +100,9 @@ form {
 .contact-me span{
     align-self: flex-start;
     margin-left: 60px;
+}
+.contact-me a{
+    color: #7bc9e6;
 }
 
 label {

@@ -11,6 +11,8 @@
                         <h3 class="year">
                             {{ ed.year }}
                         </h3>
+                        <span class="hover">Hover Me!</span>
+                        <span class="click">Click Me!</span>
                     </div>
                     <div class="card-body">
                         <div class="card-info">
@@ -42,6 +44,8 @@
                         <h3 class="title">
                             {{ skill.title }}
                         </h3>
+                        <span class="hover">Hover Me!</span>
+                        <span class="click">Click Me!</span>
                     </div>
                     <div class="card-body">
                         <div class="skill-logo">
@@ -189,6 +193,10 @@ export default {
     top: 100px;
     color: #67C7EB;
     text-shadow: 0px 0px 3px #7bc9e6;
+}
+
+.click{
+    display: none;
 }
 
 .card-info {
