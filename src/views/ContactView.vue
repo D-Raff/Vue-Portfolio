@@ -30,10 +30,9 @@
             </div>
             <div class="contact-me">
                 <h2>Contact Me</h2>
-                <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon">Phone: 0827881888</span>
-                <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon">Email: damonraffels@gmail.com</a></span>
+                <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon"> damonraffels@gmail.com</a></span>
+                <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon"> 0827881888</span>
                 <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon">GitHub</a></span>
-                <span><a href="https://www.instagram.com/damon.raffels/"><img src="https://i.ibb.co/h90xBGB/instagram-4-512.png" alt="icon">Instagram</a></span>
                 <span><a href="https://www.linkedin.com/in/damonraffels"><img src="https://i.ibb.co/9nWVPKv/kisspng-computer-icons-linkedin-5aff0283e54964-1704227815266617639392.png" alt="icon"> LinkedIn</a></span>
             </div>
         </div>
@@ -93,13 +92,17 @@ form {
     border: #0088ff 3px solid;
     z-index: 1;
     height: 400px;
-    width: 300px;
+    width: 290px;
     animation: glow 1s ease-in 3s 1 forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+.contact-me span{
+    align-self: flex-start;
+    margin-left: 60px;
 }
 
 label {

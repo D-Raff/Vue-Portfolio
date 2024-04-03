@@ -7,7 +7,7 @@
       <router-link to="/about">About</router-link> |
     </template>
     <template #ResumeBtn>
-      <router-link to="/resume">Resume</router-link> |
+      <router-link to="/resume">Education and Work</router-link> |
     </template>
     <template #ProjectsBtn>
       <router-link to="/projects">Projects</router-link> |

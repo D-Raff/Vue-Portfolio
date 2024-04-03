@@ -76,6 +76,7 @@ export default {
 .test-card:hover .content {
   transform: rotateY(180deg);
   transition: transform 0.5s;
+  animation: glow 3s infinite ease-in;
 }
 
 .front,
@@ -123,19 +124,6 @@ export default {
   width: 100%;
 }
 
-.quote::-webkit-scrollbar {
-  width: 5px;
-}
-
-.quote::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.quote::-webkit-scrollbar-thumb {
-  background: #67c7eb;
-  border-radius: 10px;
-  height: 10px;
-}
 .test-img {
   width: 100%;
   height: 250px;
@@ -154,5 +142,9 @@ h1{
   color: #aa0505;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
-
+@keyframes glow {
+    50%{
+        box-shadow: 0 0 20px 5px #aa0505;
+    }
+}
 </style>
