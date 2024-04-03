@@ -9,6 +9,7 @@ export default createStore({
     testimonials: null,
     projects: null,
     Contact: null,
+    work: null,
   },
   getters: {
   },
@@ -30,6 +31,9 @@ export default createStore({
     },
     setContact(state, value){
       state.Contact = value
+    },
+    setwork(state, value){
+      state.work = value
     },
   },
   actions: {
@@ -85,6 +89,15 @@ export default createStore({
         let res = await fetch(dataUrl)
         let {Contact} = await res.json()
         context.commit('setContact', Contact)
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    async fetchwork(context){
+      try {
+        let res = await fetch(dataUrl)
+        let {work} = await res.json()
+        context.commit('setwork', work)
       } catch (error) {
         console.log(error);
       }
