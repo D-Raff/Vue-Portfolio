@@ -1,6 +1,18 @@
 <template>
     <div class="Contact">
-        <div class="c-info" v-if="Contact">
+        <div class="jarv-container">
+                <div class="stat circ"></div>
+                <div class="outerm circ"></div>
+                <div class="out circ"></div>
+                <div class="mid circ"></div>
+                <div class="mid2 circ"></div>
+                <div class="mid3 circ"></div>
+                <div class="in circ"></div>
+                <div class="inmost3 circ"></div>
+                <div class="inmost2 circ"></div>
+                <div class="inmost circ"></div>
+            </div>
+        <div class="c-info container" v-if="Contact">
             <form action="https://formspree.io/f/xleqdjnr" method="POST">
                 <label>
                     <span>Your full Name:</span>
@@ -16,18 +28,6 @@
                 </label>
                 <button type="submit">Send</button>
             </form>
-            <div class="jarv-container">
-                <div class="stat circ"></div>
-                <div class="outerm circ"></div>
-                <div class="out circ"></div>
-                <div class="mid circ"></div>
-                <div class="mid2 circ"></div>
-                <div class="mid3 circ"></div>
-                <div class="in circ"></div>
-                <div class="inmost3 circ"></div>
-                <div class="inmost2 circ"></div>
-                <div class="inmost circ"></div>
-            </div>
             <div class="contact-me">
                 <h2>Contact Me</h2>
                 <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon"> damonraffels@gmail.com</a></span>
@@ -55,7 +55,7 @@ export default {
 .Contact {
     min-height: 80vh;
     width: 100vw;
-    margin-top: 5em;
+    margin-top: 3em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -64,9 +64,12 @@ export default {
 }
 
 .c-info {
+    height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 form {
@@ -74,26 +77,20 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid #0088ff;
+    border: 3px solid #0088ff;
     border-radius: 10px;
-    height: 400px;
-    width: 300px;
+    min-height: 400px;
+    width: 290px;
     gap: 3em;
-    z-index: 1;
-    position: relative;
-    right: 50%;
-    animation: glow 1s ease-in 3s 1 forwards;
-    box-shadow: 0px 0px 8px 2px #7bc9e6;
+    animation: glow 3s ease-in infinite;
 }
 
 .contact-me {
-    position: relative;
-    left: 50%;
     border: #0088ff 3px solid;
-    z-index: 1;
+    border-radius: 10px;
     height: 400px;
     width: 290px;
-    animation: glow 1s ease-in 3s 1 forwards;
+    animation: glow 3s ease-in infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,6 +116,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #67C7EB
 
 }
 
@@ -131,6 +129,7 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #67C7EB;
 }
 
 .jarv-container {
@@ -207,7 +206,7 @@ form button {
 .inmost2 {
     width: 80px;
     border: 13px solid #0088ff;
-
+    
 }
 
 .inmost {
@@ -252,4 +251,15 @@ span a {
     100% {
         transform: rotate(405deg);
     }
-}</style>
+}
+@keyframes glow {
+    50%{
+        box-shadow: inset 0px 0px 10px 2px #7bc9e6;
+    }
+}
+@keyframes expand {
+    from{
+        height: 0;
+    }
+}
+</style>
