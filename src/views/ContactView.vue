@@ -141,6 +141,7 @@ form button {
     justify-content: center;
     align-items: center;
     z-index: 0;
+    animation: fade 3s ;
 }
 
 .circ {
@@ -257,9 +258,5 @@ span a {
         box-shadow: inset 0px 0px 10px 2px #7bc9e6;
     }
 }
-@keyframes expand {
-    from{
-        height: 0;
-    }
-}
+
 </style>
