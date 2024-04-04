@@ -20,10 +20,7 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#">
-                <router-link to="/">Home</router-link>
-              </a>
-              <!-- <slot name="HomeBtn"></slot> -->
+              <slot name="HomeBtn"></slot>
             </li>
             <li class="nav-item">
               <slot name="AboutBtn"></slot>
@@ -66,7 +63,7 @@ export default {
 
 .main-nav {
   background: transparent;
-  height: 5em;
+  height: 4em;
 }
 
 img[alt="nav-icon"] {
@@ -83,5 +80,13 @@ nav li :hover {
 }
 .navbar-nav {
   gap: 5px;
+}
+@media screen and (max-width: 992px) {
+  img[alt="nav-icon"] {
+    display: none;
+  }
+  .navbar-nav{
+    background: black;
+  }
 }
 </style>

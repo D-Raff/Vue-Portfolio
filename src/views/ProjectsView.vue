@@ -52,6 +52,7 @@ export default {
     background: url("https://i.ibb.co/rkt8SGV/pngwing-com-7.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed;
 }
 .proj-cont{
     display: flex;
@@ -126,5 +127,16 @@ img[alt="icon"] {
 .proj-card:hover {
     transform: perspective(500px) translateZ(100px);
     filter: drop-shadow(0px 0px 5px #7bc9e6);
+}
+@media screen and (max-width: 420px) {
+    .projects{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+    }
+    .proj-card:hover {
+    transform: none;
+    filter: none;
+}
 }
 </style>

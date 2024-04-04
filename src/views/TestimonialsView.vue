@@ -10,6 +10,10 @@
             </div>
             <div class="Name">{{ test.name }} {{ test.surname }}</div>
             <img class="turn" src="https://iili.io/JN1F2ZQ.png" alt="logo">
+            <p class="large" >
+              <i class="fa-solid fa-book-open"></i>
+              <section class="app">hover</section>
+            </p>
           </div>
           <div class="back">
             {{ test.quotes }}
@@ -34,7 +38,7 @@ export default {
 
 <style scoped>
 .test-page {
-  margin-top: 6em;
+  margin-top: 2em;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -147,6 +151,26 @@ img[alt="Test-photo"] {
 .turn{
   height: 50px;
 }
+.fa-solid{
+  font-size: 2rem;
+  color: #aa0505;
+  z-index: 1;
+  position: relative;
+}
+.app{
+  position: relative;
+  bottom: 25px;
+  z-index: 0;
+  transition: 2s;
+  animation: drop 3s;
+  opacity: 0;
+}
+@keyframes drop {
+  70%{
+      bottom: 0;
+      opacity: 100%;
+  }
+}
 @keyframes glow {
     50%{
         box-shadow: 0 0 20px 5px #aa0505;
@@ -155,6 +179,14 @@ img[alt="Test-photo"] {
 @media (max-width: 420px) {
   .heading{
    font-size: 4rem;
+  }
+  .large{
+    display: none;
+  }
+}
+@media (min-width: 420px) {
+  .turn{
+   display: none;
   }
 }
 </style>

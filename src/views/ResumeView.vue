@@ -160,6 +160,7 @@ export default {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -170,7 +171,7 @@ export default {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
 }

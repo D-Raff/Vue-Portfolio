@@ -13,7 +13,7 @@
                 <div class="inmost circ"></div>
             </div>
         <div class="c-info container" v-if="Contact">
-            <form action="https://formspree.io/f/xleqdjnr" method="POST">
+            <form class="form" action="https://formspree.io/f/xleqdjnr" method="POST">
                 <label>
                     <span>Your full Name:</span>
                     <input type="text" name="name">
@@ -29,11 +29,13 @@
                 <button type="submit">Send</button>
             </form>
             <div class="contact-me">
-                <h2>Contact Me</h2>
-                <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon"> damonraffels@gmail.com</a></span>
-                <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon"> 0827881888</span>
-                <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"> GitHub</a></span>
-                <span><a href="https://www.linkedin.com/in/damonraffels"><img src="https://i.ibb.co/9nWVPKv/kisspng-computer-icons-linkedin-5aff0283e54964-1704227815266617639392.png" alt="icon"> LinkedIn</a></span>
+                <section class="cont">
+                    <h2>Contact Me</h2>
+                    <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon"> damonraffels@gmail.com</a></span>
+                    <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon"> 0827881888</span>
+                    <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"> GitHub</a></span>
+                    <span><a href="https://www.linkedin.com/in/damonraffels"><img src="https://i.ibb.co/9nWVPKv/kisspng-computer-icons-linkedin-5aff0283e54964-1704227815266617639392.png" alt="icon"> LinkedIn</a></span>
+                </section>
             </div>
         </div>
     </div>
@@ -55,7 +57,6 @@ export default {
 .Contact {
     min-height: 80vh;
     width: 100vw;
-    margin-top: 3em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -64,7 +65,7 @@ export default {
 }
 
 .c-info {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -91,11 +92,17 @@ form {
     height: 400px;
     width: 290px;
     animation: glow 3s ease-in infinite;
+}
+.cont {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    animation: appear 2s 2s ease-in forwards;
+    transition: 2s;
 }
 .contact-me span{
     align-self: flex-start;
@@ -154,6 +161,7 @@ form button {
 }
 
 .stat {
+    position: relative;
     height: 80%;
     border: 25px solid #0088ff;
 }
@@ -261,5 +269,68 @@ span a {
         box-shadow: inset 0px 0px 10px 2px #7bc9e6;
     }
 }
+@media screen and (max-width: 420px) {
+    .jarv-container{
+        overflow: hidden;
+    }
+    /* .c-info{
+        flex-direction: column;
+    } */
+}
+@media screen and (max-width: 551px) {
+    .jarv-container{
+        top: 30px;
+    }
+    .c-info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form{
+        height: 300px;
+        position: relative;
+        top: 130px;
+        animation: lift 1s forwards;
+        transition: 2s;
+    }
+    .contact-me{
+        height: 200px;
+        position: relative;
+        bottom: 269px;
+        visibility: hidden;
+        animation: drop 1s 1s ease-in forwards;
+        transition: 2s;
+    }
+    .cont{
+        opacity: 0;
+        gap: 2px;
+    }
+    h2{
+        margin: 0;
+    }
+    @keyframes drop {
+        10%{
+            visibility: hidden;
+        }
+        100%{
+            bottom: 0;
+            visibility: visible;
 
+        }
+    }
+    @keyframes lift {
+        10%{
+            visibility: hidden;
+        }
+        100%{
+            top: 0;
+            visibility: visible;
+
+        }
+    }
+    @keyframes appear {
+        100%{
+            opacity: 100%;
+        }
+    }
+}
 </style>
