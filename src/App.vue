@@ -11,7 +11,7 @@
       <router-link to="/projects">Projects</router-link> |
     </template>
     <template #TestimonialsBtn>
-      <router-link to="/testimonials">Testimonials</router-link> |
+      <router-link to="/testimonials">Peer Reviews</router-link> |
     </template>
     <template #ContactBtn>
       <router-link to="/contact">Contact Me</router-link>

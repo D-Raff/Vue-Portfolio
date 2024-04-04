@@ -76,15 +76,15 @@ export default {};
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  padding-bottom: 100px;
 }
 
 .main-div {
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  padding-top: 4em;
+  margin-top: 2em;
   justify-content: center;
   align-items: center;
 }
@@ -183,6 +183,7 @@ export default {};
 }
 
 .information {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -191,6 +192,7 @@ export default {};
 }
 
 .title {
+  position: relative;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -256,11 +258,43 @@ export default {};
 }
 
 @media screen and (max-width: 420px) {
-  .about-info{
+  .about-info {
     flex-direction: column;
   }
   .about-img {
-    height: 300px
+    width: 100%;
+  }
+  .title {
+    position: relative;
+    top: 0 !important;
+  }
+  .circle {
+    bottom: 300px;
+  }
+  @keyframes expand {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+  @keyframes load {
+    0% {
+      rotate: 0deg;
+    }
+
+    80% {
+      rotate: 360deg;
+      opacity: 50%;
+    }
+
+    100% {
+      display: none;
+    }
+  }
+  .about-info {
+    animation: display 1s ease-in 2.5s 1 forwards;
   }
 }
 </style>
