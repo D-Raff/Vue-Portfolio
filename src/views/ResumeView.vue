@@ -11,6 +11,8 @@
                         <h3 class="year">
                             {{ ed.year }}
                         </h3>
+                        <span class="hover">Hover Me!</span>
+                        <span class="click">Click Me!</span>
                     </div>
                     <div class="card-body">
                         <div class="card-info">
@@ -42,6 +44,8 @@
                         <h3 class="title">
                             {{ skill.title }}
                         </h3>
+                        <span class="hover">Hover Me!</span>
+                        <span class="click">Click Me!</span>
                     </div>
                     <div class="card-body">
                         <div class="skill-logo">
@@ -58,6 +62,35 @@
             </div>
 
         </div>
+        <div class="container" id="row-3" v-if="work">
+            <div class="Heading">
+                Work Experience
+            </div>
+            <div class="work">
+                <div class="work-card" v-for="experience in work" :key="experience.id">
+                    <div class="rotate"></div>
+                    <div class="card-header">
+                        <h3 class="year2">
+                            {{ experience.year }}
+                        </h3>
+                        <span class="hover">Hover Me!</span>
+                        <span class="click">Click Me!</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-info">
+                            {{ experience.description }}
+                        </div>
+                        <div class="card-info">
+                            <span>Place:</span> {{ experience.place }}
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -70,10 +103,14 @@ export default {
         skills() {
             return this.$store.state.skills
         },
+        work() {
+            return this.$store.state.work
+        },
     },
     mounted() {
         this.$store.dispatch('fetcheducation')
         this.$store.dispatch('fetchskills')
+        this.$store.dispatch('fetchwork')
     }
 }
 </script>
@@ -105,7 +142,12 @@ export default {
     justify-content: space-evenly;
     gap: 30px;
 }
-
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
 #row-2 {
     width: 90%;
     display: flex;
@@ -114,12 +156,22 @@ export default {
     justify-content: center;
     gap: 20px;
 }
+#row-3 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
 
 .skill-row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
 }
@@ -132,6 +184,20 @@ export default {
 }
 
 .ed-card {
+    width: 250px !important;
+    aspect-ratio: 1/1;
+    background: black;
+    border-radius: 50%;
+    color: #B97D10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    transition: 1s;
+}
+.work-card {
     width: 250px !important;
     aspect-ratio: 1/1;
     background: black;
@@ -177,11 +243,14 @@ export default {
     box-shadow: 2px 2px 2px 0px #525252;
 }
 
-.year {
+:is(.year, .year2) {
     position: relative;
     top: 100px;
     color: #67C7EB;
     text-shadow: 0px 0px 3px #7bc9e6;
+}
+.year2{
+    font-size: 20px;
 }
 
 .title {
@@ -191,12 +260,22 @@ export default {
     text-shadow: 0px 0px 3px #7bc9e6;
 }
 
+.hover{
+    position: relative;
+    top: 100px;
+}
+
+.click{
+    display: none;
+}
+
 .card-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: 2s;
+    font-size: 13px;
 }
 
 .card-body {
@@ -226,6 +305,47 @@ export default {
 
     .year {
         animation: move 500ms ease-in 1 forwards;
+        transition: 2s;
+    }
+
+    .hover{
+        display: none;
+    }
+
+    .click{
+        display: none;
+    }
+
+    .card-body {
+        animation: appear 2s forwards;
+    }
+
+    .rotate {
+        animation: spin 1s linear infinite;
+        background: black;
+
+    }
+}
+.work-card:hover {
+    animation: lift 500ms ease 1 forwards;
+    transform: perspective(500px) translateZ(90px);
+    transform-style: preserve-3d;
+
+    .card-body {
+        visibility: visible;
+    }
+
+    .year2 {
+        animation: move2 500ms ease-in 1 forwards;
+        transition: 2s;
+    }
+
+    .hover{
+        display: none;
+    }
+
+    .click{
+        display: none;
     }
 
     .card-body {
@@ -249,6 +369,14 @@ export default {
 
     .title {
         animation: move 500ms ease-in 1 forwards;
+    }
+
+    .hover{
+        display: none;
+    }
+
+    .click{
+        display: none;
     }
 
     .card-body {
@@ -278,6 +406,12 @@ export default {
     }
 
 }
+@keyframes move2 {
+    to {
+        top: 60px;
+    }
+
+}
 
 @keyframes appear {
     to {
@@ -285,17 +419,21 @@ export default {
     }
 }
 
-@media screen and (max-width: 344px) {
-    .skill-card:hover {
-        transform: perspective(800px) translateZ(10px);
-    }
-}
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 420px) {
     .skill-card:hover {
         transform: perspective(800px) translateZ(10px);
     }
     .ed-card:hover{
         transform: perspective(800px) translateZ(10px);
+    }
+    .work-card:hover{
+        transform: perspective(800px) translateZ(10px);
+    }
+    .hover{
+        display: none;
+    }
+    .click{
+        display: contents;
     }
 }
 </style>

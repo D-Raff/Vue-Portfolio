@@ -1,19 +1,17 @@
 <template>
   <Navbar class="Nav">
-    <template #HomeBtn>
-      <router-link to="/">Home</router-link> |
-    </template>
+    <template #HomeBtn> <router-link to="/">Home</router-link> | </template>
     <template #AboutBtn>
       <router-link to="/about">About</router-link> |
     </template>
     <template #ResumeBtn>
-      <router-link to="/resume">Resume</router-link> |
+      <router-link to="/resume">Education and Work</router-link> |
     </template>
     <template #ProjectsBtn>
       <router-link to="/projects">Projects</router-link> |
     </template>
     <template #TestimonialsBtn>
-      <router-link to="/testimonials">Testimonials</router-link> |
+      <router-link to="/testimonials">Peer Reviews</router-link> |
     </template>
     <template #ContactBtn>
       <router-link to="/contact">Contact Me</router-link>
@@ -26,26 +24,20 @@
 </template>
 
 <script>
-
-import Footer from './components/Footer.vue';
-import Navbar from './components/Navbar.vue';
+import Footer from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Navbar,
-    Footer
-
-  }
-
-}
-
-
+    Footer,
+  },
+};
 </script>
 
-
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&display=swap");
 
 #app {
   font-family: marvel, Helvetica, Arial, sans-serif;
@@ -64,7 +56,7 @@ export default {
 }
 
 .Nav {
-  font-family: 'Iceland', sans-serif;
+  font-family: "Iceland", sans-serif;
   position: absolute;
   right: 0;
   z-index: 1;
@@ -80,7 +72,7 @@ Nav a {
 }
 
 Nav a.router-link-exact-active {
-  color: #AA0505;
+  color: #aa0505;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
 

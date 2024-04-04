@@ -1,7 +1,19 @@
 <template>
     <div class="Contact">
-        <div class="c-info" v-if="Contact">
-            <form action="https://formspree.io/f/xleqdjnr" method="POST">
+        <div class="jarv-container">
+                <div class="stat circ"></div>
+                <div class="outerm circ"></div>
+                <div class="out circ"></div>
+                <div class="mid circ"></div>
+                <div class="mid2 circ"></div>
+                <div class="mid3 circ"></div>
+                <div class="in circ"></div>
+                <div class="inmost3 circ"></div>
+                <div class="inmost2 circ"></div>
+                <div class="inmost circ"></div>
+            </div>
+        <div class="c-info container" v-if="Contact">
+            <form class="form" action="https://formspree.io/f/xleqdjnr" method="POST">
                 <label>
                     <span>Your full Name:</span>
                     <input type="text" name="name">
@@ -16,25 +28,14 @@
                 </label>
                 <button type="submit">Send</button>
             </form>
-            <div class="jarv-container">
-                <div class="stat circ"></div>
-                <div class="outerm circ"></div>
-                <div class="out circ"></div>
-                <div class="mid circ"></div>
-                <div class="mid2 circ"></div>
-                <div class="mid3 circ"></div>
-                <div class="in circ"></div>
-                <div class="inmost3 circ"></div>
-                <div class="inmost2 circ"></div>
-                <div class="inmost circ"></div>
-            </div>
             <div class="contact-me">
-                <h2>Contact Me</h2>
-                <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon">Phone: 0827881888</span>
-                <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon">Email: damonraffels@gmail.com</a></span>
-                <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon">GitHub</a></span>
-                <span><a href="https://www.instagram.com/damon.raffels/"><img src="https://i.ibb.co/h90xBGB/instagram-4-512.png" alt="icon">Instagram</a></span>
-                <span><a href="https://www.linkedin.com/in/damonraffels"><img src="https://i.ibb.co/9nWVPKv/kisspng-computer-icons-linkedin-5aff0283e54964-1704227815266617639392.png" alt="icon"> LinkedIn</a></span>
+                <section class="cont">
+                    <h2>Contact Me</h2>
+                    <span><a href="damonraffels@gmail.com"><img src="https://i.ibb.co/Gv3pK5H/email-14-512.png" alt="icon"> damonraffels@gmail.com</a></span>
+                    <span><img src="https://i.ibb.co/PwXZJpW/whatsapp-512.png" alt="icon"> 0827881888</span>
+                    <span><a href="https://github.com/D-Raff"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"> GitHub</a></span>
+                    <span><a href="https://www.linkedin.com/in/damonraffels"><img src="https://i.ibb.co/9nWVPKv/kisspng-computer-icons-linkedin-5aff0283e54964-1704227815266617639392.png" alt="icon"> LinkedIn</a></span>
+                </section>
             </div>
         </div>
     </div>
@@ -56,7 +57,6 @@ export default {
 .Contact {
     min-height: 80vh;
     width: 100vw;
-    margin-top: 5em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -65,9 +65,12 @@ export default {
 }
 
 .c-info {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 form {
@@ -75,31 +78,38 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid #0088ff;
+    border: 3px solid #0088ff;
     border-radius: 10px;
-    height: 400px;
-    width: 300px;
+    min-height: 400px;
+    width: 290px;
     gap: 3em;
-    z-index: 1;
-    position: relative;
-    right: 50%;
-    animation: glow 1s ease-in 3s 1 forwards;
-    box-shadow: 0px 0px 8px 2px #7bc9e6;
+    animation: glow 3s ease-in infinite;
 }
 
 .contact-me {
-    position: relative;
-    left: 50%;
     border: #0088ff 3px solid;
-    z-index: 1;
+    border-radius: 10px;
     height: 400px;
-    width: 300px;
-    animation: glow 1s ease-in 3s 1 forwards;
+    width: 290px;
+    animation: glow 3s ease-in infinite;
+}
+.cont {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    animation: appear 2s 2s ease-in forwards;
+    transition: 2s;
+}
+.contact-me span{
+    align-self: flex-start;
+    margin-left: 60px;
+}
+.contact-me a{
+    color: #7bc9e6;
 }
 
 label {
@@ -116,6 +126,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #67C7EB
 
 }
 
@@ -128,6 +139,7 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #67C7EB;
 }
 
 .jarv-container {
@@ -139,6 +151,7 @@ form button {
     justify-content: center;
     align-items: center;
     z-index: 0;
+    animation: fade 3s ;
 }
 
 .circ {
@@ -148,6 +161,7 @@ form button {
 }
 
 .stat {
+    position: relative;
     height: 80%;
     border: 25px solid #0088ff;
 }
@@ -204,7 +218,7 @@ form button {
 .inmost2 {
     width: 80px;
     border: 13px solid #0088ff;
-
+    
 }
 
 .inmost {
@@ -249,4 +263,74 @@ span a {
     100% {
         transform: rotate(405deg);
     }
-}</style>
+}
+@keyframes glow {
+    50%{
+        box-shadow: inset 0px 0px 10px 2px #7bc9e6;
+    }
+}
+@media screen and (max-width: 420px) {
+    .jarv-container{
+        overflow: hidden;
+    }
+    /* .c-info{
+        flex-direction: column;
+    } */
+}
+@media screen and (max-width: 551px) {
+    .jarv-container{
+        top: 30px;
+    }
+    .c-info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form{
+        height: 300px;
+        position: relative;
+        top: 130px;
+        animation: lift 1s forwards;
+        transition: 2s;
+    }
+    .contact-me{
+        height: 200px;
+        position: relative;
+        bottom: 269px;
+        visibility: hidden;
+        animation: drop 1s 1s ease-in forwards;
+        transition: 2s;
+    }
+    .cont{
+        opacity: 0;
+        gap: 2px;
+    }
+    h2{
+        margin: 0;
+    }
+    @keyframes drop {
+        10%{
+            visibility: hidden;
+        }
+        100%{
+            bottom: 0;
+            visibility: visible;
+
+        }
+    }
+    @keyframes lift {
+        10%{
+            visibility: hidden;
+        }
+        100%{
+            top: 0;
+            visibility: visible;
+
+        }
+    }
+    @keyframes appear {
+        100%{
+            opacity: 100%;
+        }
+    }
+}
+</style>

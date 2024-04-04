@@ -1,6 +1,6 @@
 <template>
   <div class="test-page">
-    <h1>Testimonials</h1>
+    <h1 class="heading">Testimonials</h1>
     <div class="testimonials" v-if="testimonials">
       <div class="test-card" v-for="test in testimonials" :key="test.name">
         <div class="content">
@@ -9,6 +9,11 @@
               <img :src="test.profile" alt="Test-photo" />
             </div>
             <div class="Name">{{ test.name }} {{ test.surname }}</div>
+            <img class="turn" src="https://iili.io/JN1F2ZQ.png" alt="logo">
+            <p class="large" >
+              <i class="fa-solid fa-book-open"></i>
+              <section class="app">hover</section>
+            </p>
           </div>
           <div class="back">
             {{ test.quotes }}
@@ -33,7 +38,7 @@ export default {
 
 <style scoped>
 .test-page {
-  margin-top: 6em;
+  margin-top: 2em;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -60,13 +65,14 @@ export default {
   flex-wrap: wrap;
   color: #fbca03;
   perspective: 580px;
+  margin: 10px;
 }
 
 .content {
   border: 3px solid #aa0505;
   position: absolute;
   width: 100%;
-  height: 380px;
+  height: 390px;
   border-radius: 10px;
   box-shadow: 0 0 5px 2px #aa0505;
   transition: transform 1s;
@@ -76,6 +82,7 @@ export default {
 .test-card:hover .content {
   transform: rotateY(180deg);
   transition: transform 0.5s;
+  animation: glow 3s infinite ease-in;
 }
 
 .front,
@@ -100,7 +107,7 @@ export default {
 }
 .Name {
   font-family: iceland;
-  font-size: 40px;
+  font-size: 30px;
   color: #67c7eb;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
@@ -123,19 +130,6 @@ export default {
   width: 100%;
 }
 
-.quote::-webkit-scrollbar {
-  width: 5px;
-}
-
-.quote::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.quote::-webkit-scrollbar-thumb {
-  background: #67c7eb;
-  border-radius: 10px;
-  height: 10px;
-}
 .test-img {
   width: 100%;
   height: 250px;
@@ -147,12 +141,52 @@ img[alt="Test-photo"] {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
-h1{
+.heading{
   font-family: iceland, sans-serif;
   font-size: 5rem;
   font-weight: bold;
   color: #aa0505;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
-
+.turn{
+  height: 50px;
+}
+.fa-solid{
+  font-size: 2rem;
+  color: #aa0505;
+  z-index: 1;
+  position: relative;
+}
+.app{
+  position: relative;
+  bottom: 25px;
+  z-index: 0;
+  transition: 2s;
+  animation: drop 3s;
+  opacity: 0;
+}
+@keyframes drop {
+  70%{
+      bottom: 0;
+      opacity: 100%;
+  }
+}
+@keyframes glow {
+    50%{
+        box-shadow: 0 0 20px 5px #aa0505;
+    }
+}
+@media (max-width: 420px) {
+  .heading{
+   font-size: 4rem;
+  }
+  .large{
+    display: none;
+  }
+}
+@media (min-width: 420px) {
+  .turn{
+   display: none;
+  }
+}
 </style>

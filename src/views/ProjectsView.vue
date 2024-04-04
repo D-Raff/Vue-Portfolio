@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
-        <img src="https://i.ibb.co/rkt8SGV/pngwing-com-7.png" alt="background">
-        <div class="row" v-if="projects">
+        <!-- <img src="https://i.ibb.co/rkt8SGV/pngwing-com-7.png" alt="background"> -->
+        <div class="container proj-cont" v-if="projects">
             <div class="proj-card" v-for="project in projects" :key="project.name">
 
                 <div class="p-body">
@@ -15,7 +15,7 @@
                     </div>
                     <div class="links">
                         <a :href="project.gitHub"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"></a>
-                        <a :href="project.netlify"><img
+                        <a :href="project.link"><img
                                 src="https://i.ibb.co/TL3FP3n/Simpleicons-Team-Simple-Netlify-512.png" alt="icon"></a>
                     </div>
                 </div>
@@ -43,16 +43,23 @@ export default {
 
 <style>
 .projects {
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 5em;
+    padding-top: 7em;
     justify-content: center;
+    background: url("https://i.ibb.co/rkt8SGV/pngwing-com-7.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
-.row{
+.proj-cont{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 4rem;
 }
 
 .proj-card {
@@ -120,5 +127,16 @@ img[alt="icon"] {
 .proj-card:hover {
     transform: perspective(500px) translateZ(100px);
     filter: drop-shadow(0px 0px 5px #7bc9e6);
+}
+@media screen and (max-width: 420px) {
+    .projects{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+    }
+    .proj-card:hover {
+    transform: none;
+    filter: none;
+}
 }
 </style>
