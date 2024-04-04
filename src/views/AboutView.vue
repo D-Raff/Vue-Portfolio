@@ -152,7 +152,6 @@ export default {};
 
 .about-info {
   display: flex;
-  flex-wrap: wrap;
   height: 100%;
   opacity: 0%;
   padding: 20.2px;
@@ -257,7 +256,7 @@ export default {};
   }
 }
 
-@media screen and (max-width: 420px) {
+@media (max-width: 420px) {
   .about-info {
     flex-direction: column;
   }
@@ -295,6 +294,14 @@ export default {};
   }
   .about-info {
     animation: display 1s ease-in 2.5s 1 forwards;
+  }
+}
+@media (max-width: 992px) {
+  .about-info {
+    flex-direction: column;
+  }
+  .about-img {
+    width: 100%;
   }
 }
 </style>

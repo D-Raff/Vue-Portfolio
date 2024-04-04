@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <div class="reactor-div">
+      <ArcReactor class="reactor" />
+    </div>
     <img src="https://iili.io/JhDRlWB.png" alt="profilePhoto">
     <div class="info">
       <p class="Name">I Am Damon Raffels</p>
@@ -7,9 +10,6 @@
           {{ work.title }}
         </span></p>
 
-    </div>
-    <div class="reactor-div">
-      <ArcReactor class="reactor" />
     </div>
   </div>
 </template>
@@ -37,10 +37,12 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .home {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: black;
   min-height: 100%;
   width: 100vw;
@@ -50,25 +52,26 @@ export default {
   animation: fade-in 2s ease-in;
   height: 600px;
   width: 100%;
-  width: fit-content;
-  position: absolute;
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .reactor {
   animation: shrink 3s ease 3s forwards;
   height: 100%;
+  width: 100%;
 }
 
 .info {
   height: 100px;
   width: 40%;
+  right: 50px;
   position: relative;
   color: white;
   font-family: 'Iceland', sans-serif;
-  top: 250px;
+  bottom: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,6 +79,7 @@ export default {
   visibility: hidden;
   animation: fade 2s ease-in 5s 1 forwards;
 }
+
 
 .Name {
   font-size: 50px;
@@ -130,53 +134,34 @@ img[alt='profilePhoto'] {
   }
 
   to {
-    transform: translateX(100px);
     height: 65%;
     aspect-ratio: 1/1;
     left: 15%;
   }
 }
 
-@media screen and (max-width:670px) {
-  .reactor-div {
-    width: 100%;
-  }
+@media screen and (max-width:420px) {
   .home{
-    height: 800px;
-  }
-  .info{
-    top: 500px;
-    left: 100px;
-  }
-
-  .reactor {
-    height: 50%;
-    bottom: 20px;
-  }
-
-  img[alt='profilePhoto'] {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    position: absolute;
-    visibility: hidden;
-    animation: fade 2s ease-in 6s 1 forwards;
-    top: 350px;
-  }
-
-  @keyframes shrink {
-    from {
-      transform: translateX(0px);
-      bottom: 0;
-      left: 0;
-    }
     
-    to {
-      transform: translateX(0px);
-      bottom: 0;
-      left: 0;
-      aspect-ratio: 1/1;
-    }
+  }
+  @keyframes shrink {
+  from {
+    transform: translateX(0px);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  to {
+    height: 65%;
+    aspect-ratio: 1/1;
+    bottom: 10%;
+  }
+}
+}
+@media screen and (max-width:874px) {
+  .home{
+    overflow: hidden;
   }
 }
 </style>
