@@ -66,11 +66,11 @@
             <div class="Heading">
                 Work Experience
             </div>
-            <div class="education">
+            <div class="work">
                 <div class="work-card" v-for="experience in work" :key="experience.id">
                     <div class="rotate"></div>
                     <div class="card-header">
-                        <h3 class="year">
+                        <h3 class="year2">
                             {{ experience.year }}
                         </h3>
                         <span class="hover">Hover Me!</span>
@@ -142,7 +142,12 @@ export default {
     justify-content: space-evenly;
     gap: 30px;
 }
-
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
 #row-2 {
     width: 90%;
     display: flex;
@@ -150,6 +155,15 @@ export default {
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+#row-3 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .skill-row {
@@ -228,11 +242,14 @@ export default {
     box-shadow: 2px 2px 2px 0px #525252;
 }
 
-.year {
+:is(.year, .year2) {
     position: relative;
     top: 100px;
     color: #67C7EB;
     text-shadow: 0px 0px 3px #7bc9e6;
+}
+.year2{
+    font-size: 20px;
 }
 
 .title {
@@ -257,6 +274,7 @@ export default {
     justify-content: center;
     align-items: center;
     transition: 2s;
+    font-size: 13px;
 }
 
 .card-body {
@@ -316,8 +334,8 @@ export default {
         visibility: visible;
     }
 
-    .year {
-        animation: move 500ms ease-in 1 forwards;
+    .year2 {
+        animation: move2 500ms ease-in 1 forwards;
         transition: 2s;
     }
 
@@ -387,6 +405,12 @@ export default {
     }
 
 }
+@keyframes move2 {
+    to {
+        top: 60px;
+    }
+
+}
 
 @keyframes appear {
     to {
@@ -394,17 +418,21 @@ export default {
     }
 }
 
-@media screen and (max-width: 350px) {
-    .skill-card:hover {
-        transform: perspective(800px) translateZ(10px);
-    }
-}
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 420px) {
     .skill-card:hover {
         transform: perspective(800px) translateZ(10px);
     }
     .ed-card:hover{
         transform: perspective(800px) translateZ(10px);
+    }
+    .work-card:hover{
+        transform: perspective(800px) translateZ(10px);
+    }
+    .hover{
+        display: none;
+    }
+    .click{
+        display: contents;
     }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="test-page">
-    <h1>Testimonials</h1>
+    <h1 class="heading">Testimonials</h1>
     <div class="testimonials" v-if="testimonials">
       <div class="test-card" v-for="test in testimonials" :key="test.name">
         <div class="content">
@@ -9,6 +9,7 @@
               <img :src="test.profile" alt="Test-photo" />
             </div>
             <div class="Name">{{ test.name }} {{ test.surname }}</div>
+            <img class="turn" src="https://iili.io/JN1F2ZQ.png" alt="logo">
           </div>
           <div class="back">
             {{ test.quotes }}
@@ -60,13 +61,14 @@ export default {
   flex-wrap: wrap;
   color: #fbca03;
   perspective: 580px;
+  margin: 10px;
 }
 
 .content {
   border: 3px solid #aa0505;
   position: absolute;
   width: 100%;
-  height: 380px;
+  height: 390px;
   border-radius: 10px;
   box-shadow: 0 0 5px 2px #aa0505;
   transition: transform 1s;
@@ -101,7 +103,7 @@ export default {
 }
 .Name {
   font-family: iceland;
-  font-size: 40px;
+  font-size: 30px;
   color: #67c7eb;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
@@ -135,16 +137,24 @@ img[alt="Test-photo"] {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
-h1{
+.heading{
   font-family: iceland, sans-serif;
   font-size: 5rem;
   font-weight: bold;
   color: #aa0505;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
+.turn{
+  height: 50px;
+}
 @keyframes glow {
     50%{
         box-shadow: 0 0 20px 5px #aa0505;
     }
+}
+@media (max-width: 420px) {
+  .heading{
+   font-size: 4rem;
+  }
 }
 </style>

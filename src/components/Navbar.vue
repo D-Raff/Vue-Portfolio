@@ -10,6 +10,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          ref="navbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,7 +20,10 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <slot name="HomeBtn"></slot>
+              <a href="#">
+                <router-link to="/">Home</router-link>
+              </a>
+              <!-- <slot name="HomeBtn"></slot> -->
             </li>
             <li class="nav-item">
               <slot name="AboutBtn"></slot>
@@ -50,6 +54,11 @@
 <script>
 export default {
   name: "NavBarComp",
+  watch: {
+    $route() {
+      this.$refs.navbar.click(); //click on route change
+    },
+  },
 };
 </script>
 <style scoped>
