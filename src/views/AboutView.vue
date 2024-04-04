@@ -8,18 +8,24 @@
           <div class="inner"></div>
         </div>
         <div class="about-info">
-          <img src="https://i.ibb.co/6DwxjHh/1000025632.jpg" alt="about-img" class="about-img">
+          <img
+            src="https://i.ibb.co/6DwxjHh/1000025632.jpg"
+            alt="about-img"
+            class="about-img"
+          />
           <div class="information">
             <h1 class="head">ABOUT ME</h1>
             <p class="text">
-              I am a dedicated, hard-working individual who is always in pursuit of knowledge to further my skills and
-              abilities and therefore communicate well with others and keep an open mind, constantly creating
-              opportunities
-              to learn from others
+              I am a dedicated, hard-working individual who is always in pursuit
+              of knowledge to further my skills and abilities and therefore
+              communicate well with others and keep an open mind, constantly
+              creating opportunities to learn from others
             </p>
             <p class="text">
-              Coding quickly became a passion for me and is the career path I have dedicated my life to, with the
-              determination to go as far as I possibly can in the Information and communication technology sector
+              Coding quickly became a passion for me and is the career path I
+              have dedicated my life to, with the determination to go as far as
+              I possibly can in the Information and communication technology
+              sector
             </p>
             <div class="title">
               <p class="hobbies">
@@ -32,13 +38,22 @@
                 <span>Hiking</span>
               </p>
               <p class="contact">
-                <span><span class="Key">Based in:</span> Rylands, Cape Town</span>
+                <span
+                  ><span class="Key">Based in:</span> Rylands, Cape Town</span
+                >
                 <span><span class="Key">D.O.B:</span> 07/02/1998</span>
-                <span><span class="Key">Languages:</span> English, Afrikaans</span>
-                <span class="links"><span class="Key">Socials:</span>
-                <a href="https://www.instagram.com/damon.raffels/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://www.facebook.com/damon.raffel"><i class="fa-brands fa-square-facebook"></i></a>
-              </span>
+                <span
+                  ><span class="Key">Languages:</span> English, Afrikaans</span
+                >
+                <span class="links"
+                  ><span class="Key">Socials:</span>
+                  <a href="https://www.instagram.com/damon.raffels/"
+                    ><i class="fa-brands fa-square-instagram"></i
+                  ></a>
+                  <a href="https://www.facebook.com/damon.raffel"
+                    ><i class="fa-brands fa-square-facebook"></i
+                  ></a>
+                </span>
               </p>
             </div>
           </div>
@@ -48,15 +63,9 @@
   </div>
 </template>
 
-
 <script>
-export default {
-
-}
-
-
+export default {};
 </script>
-
 
 <style scoped>
 .about {
@@ -83,7 +92,7 @@ export default {
 .head {
   font-family: iceland;
   font-size: 90px;
-  color: #FBCA03;
+  color: #fbca03;
   text-shadow: 0px 0px 3px #7bc9e6;
 }
 
@@ -143,14 +152,16 @@ export default {
 
 .about-info {
   display: flex;
+  flex-wrap: wrap;
+  height: 100%;
   opacity: 0%;
   padding: 20.2px;
   animation: display 1s ease-in 3.5s 1 forwards;
-  color: #FBCA03;
+  color: #fbca03;
 }
 
 .hobbies {
-  color: #67C7EB;
+  color: #67c7eb;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -159,56 +170,55 @@ export default {
 }
 
 .H-I {
-  color: #FBCA03;
+  color: #fbca03;
   font-family: iceland;
   font-size: 40px;
   line-height: 25px;
 }
-.text{
-  color: #67C7EB;
+.text {
+  color: #67c7eb;
   text-align: left;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
-.information{
+.information {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items:start;
+  align-items: start;
   padding: 10px;
 }
 
-.title{
+.title {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   text-shadow: none;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: left;
 }
-.contact span{
-  color: #67C7EB;
+.contact span {
+  color: #67c7eb;
 }
-.Key{
-  color: #FBCA03 !important;
+.Key {
+  color: #fbca03 !important;
 }
-.fa-brands{
+.fa-brands {
   font-size: 30px;
-  color: #FBCA03;
-  text-shadow: 0px 0px 5px #67C7EB;
+  color: #fbca03;
+  text-shadow: 0px 0px 5px #67c7eb;
 }
-.links{
+.links {
   display: flex;
   justify-content: left;
   gap: 10px;
 }
-
 
 @keyframes load {
   0% {
@@ -223,7 +233,6 @@ export default {
   100% {
     display: none;
   }
-
 }
 
 @keyframes expand {
@@ -241,8 +250,17 @@ export default {
 }
 
 @keyframes display {
-  to{
+  to {
     opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-info{
+    flex-direction: column;
+  }
+  .about-img {
+    height: 300px
   }
 }
 </style>
