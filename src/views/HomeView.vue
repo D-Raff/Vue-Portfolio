@@ -155,6 +155,9 @@ img[alt='profilePhoto'] {
     bottom: 10%;
   }
 }
+.info{
+  right: 0;
+}
 }
 @media screen and (max-width:874px) {
   .home{

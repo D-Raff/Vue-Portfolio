@@ -14,9 +14,9 @@
                         {{ project.description }}
                     </div>
                     <div class="links">
-                        <a :href="project.gitHub"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"></a>
-                        <a :href="project.link"><img
-                                src="https://i.ibb.co/TL3FP3n/Simpleicons-Team-Simple-Netlify-512.png" alt="icon"></a>
+                        <a :href="project.gitHub" target="_blank"><img src="https://i.ibb.co/YpJdk0b/github-mark-white.png" alt="icon"></a>
+                        <a :href="project.link" target="_blank"><img
+                                src="https://iili.io/JNSjk9R.png" alt="icon"></a>
                     </div>
                 </div>
 
@@ -126,7 +126,7 @@ img[alt="icon"] {
 
 .proj-card:hover {
     transform: perspective(500px) translateZ(100px);
-    filter: drop-shadow(0px 0px 5px #7bc9e6);
+    filter: drop-shadow(0px 0px 3px #7bc9e6);
 }
 @media screen and (max-width: 420px) {
     .projects{

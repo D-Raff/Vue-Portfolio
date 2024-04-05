@@ -81,6 +81,7 @@ nav li :hover {
 .navbar-nav {
   gap: 5px;
 }
+
 @media screen and (max-width: 992px) {
   img[alt="nav-icon"] {
     display: none;
