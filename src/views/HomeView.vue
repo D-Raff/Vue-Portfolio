@@ -141,9 +141,6 @@ img[alt='profilePhoto'] {
 }
 
 @media screen and (max-width:420px) {
-  .home{
-    
-  }
   @keyframes shrink {
   from {
     transform: translateX(0px);
