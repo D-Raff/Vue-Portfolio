@@ -1,5 +1,11 @@
 <template>
     <div class="resume">
+        <div class="cv">
+            <h2 class="Heading">Download my CV</h2>
+            <button class="btn">
+                <a href="https://drive.google.com/file/d/1aJCpSHXEN5F3bX877mXaz21e8Uzhsl_a/view?usp=sharing" target="_blank"><i class="fa-solid fa-circle-down"></i></a>
+            </button>
+        </div>
         <div class="container" id="row" v-if="education">
             <div class="Heading">
                 EDUCATION
@@ -115,17 +121,25 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .resume {
     min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
     box-sizing: border-box;
     gap: 30px;
+}
+
+.fa-solid{
+    color: black;
+    animation: glow 3s infinite;
+    font-size: 50px;
+    filter: drop-shadow(0px 0px 1px #7bc9e6);
 }
 
 #row {
@@ -388,6 +402,12 @@ export default {
         background: black;
 
     }
+}
+@keyframes glow {
+    60%{
+        filter: drop-shadow(0px 0px 5px #7bc9e6);
+    }
+
 }
 
 @keyframes spin {
