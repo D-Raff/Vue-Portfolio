@@ -257,6 +257,9 @@ export default {};
 }
 
 @media (max-width: 420px) {
+  .about{
+    overflow: hidden;
+  }
   .about-info {
     flex-direction: column;
   }

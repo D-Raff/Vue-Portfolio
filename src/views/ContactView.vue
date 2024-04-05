@@ -295,7 +295,8 @@ span a {
     .contact-me{
         height: 200px;
         position: relative;
-        bottom: 269px;
+        z-index: 1;
+        bottom: 250px;
         visibility: hidden;
         animation: drop 1s 1s ease-in forwards;
         transition: 2s;

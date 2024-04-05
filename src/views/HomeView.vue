@@ -141,9 +141,6 @@ img[alt='profilePhoto'] {
 }
 
 @media screen and (max-width:420px) {
-  .home{
-    
-  }
   @keyframes shrink {
   from {
     transform: translateX(0px);
@@ -157,6 +154,9 @@ img[alt='profilePhoto'] {
     aspect-ratio: 1/1;
     bottom: 10%;
   }
+}
+.info{
+  right: 0;
 }
 }
 @media screen and (max-width:874px) {

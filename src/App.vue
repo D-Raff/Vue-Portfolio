@@ -57,9 +57,9 @@ export default {
 
 .Nav {
   font-family: "Iceland", sans-serif;
-  position: absolute;
-  right: 0;
-  z-index: 1;
+  /* position: absolute;
+  right: 0; */
+  /* z-index: 1; */
   animation: fade 1s ease-in 6s 1 forwards;
   visibility: hidden;
 }
