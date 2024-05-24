@@ -3,7 +3,7 @@
         <div class="cv">
             <h2 class="Heading">Download my CV</h2>
             <button class="btn">
-                <a href="https://drive.google.com/file/d/1aJCpSHXEN5F3bX877mXaz21e8Uzhsl_a/view?usp=sharing" target="_blank"><i class="fa-solid fa-circle-down"></i></a>
+                <a href="https://drive.google.com/file/d/1cjlMqf-MaxKiKpAG_qCj_BDRjgcJdy3A/view?usp=drive_link" target="_blank"><i class="fa-solid fa-circle-down"></i></a>
             </button>
         </div>
         <div class="container" id="row" v-if="education">
