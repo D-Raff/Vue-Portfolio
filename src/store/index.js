@@ -6,6 +6,7 @@ export default createStore({
     jobTitle: null,
     education: null,
     skills: null,
+    Badges: null,
     testimonials: null,
     projects: null,
     Contact: null,
@@ -22,6 +23,9 @@ export default createStore({
     },
     setskills(state, value){
       state.skills = value
+    },
+    setBadges(state, value){
+      state.Badges = value
     },
     settestimonials(state, value){
       state.testimonials = value
@@ -62,6 +66,15 @@ export default createStore({
         let res = await fetch(dataUrl)
         let {skills} = await res.json()
         context.commit('setskills', skills)
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    async fetchBadges(context){
+      try {
+        let res = await fetch(dataUrl)
+        let {Badges} = await res.json()
+        context.commit('setBadges', Badges)
       } catch (error) {
         console.log(error);
       }
