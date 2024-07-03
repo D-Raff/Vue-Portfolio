@@ -16,16 +16,13 @@
           <div class="information">
             <h1 class="head">ABOUT ME</h1>
             <p class="text">
-              I am a dedicated, hard-working individual who is always in pursuit
-              of knowledge to further my skills and abilities and therefore
-              communicate well with others and keep an open mind, constantly
-              creating opportunities to learn from others
+              Results-driven developer with a diverse skill set spanning mechanics and fullstack web development.
             </p>
             <p class="text">
-              Coding quickly became a passion for me and is the career path I
-              have dedicated my life to, with the determination to go as far as
-              I possibly can in the Information and communication technology
-              sector
+              Completed a Certificate in Fullstack Web Development at Life Choices Coding Academy, building proficiency in HTML, CSS, Bootstrap, JavaScript, Vue.js, Node.js, MySQL and various development tools, complemented with badges in Scrum Principles, Cisco Networking Essentials, Cisco Python Essentials and others.
+            </p>
+            <p class="text">
+              Previous roles provided hands-on experience in engine rebuilding, overhauling, inventory management, and cultivated strong soft skills in customer relations, conflict resolution, and communication.
             </p>
             <div class="title">
               <p class="hobbies">
