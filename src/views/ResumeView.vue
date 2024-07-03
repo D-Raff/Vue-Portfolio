@@ -81,20 +81,18 @@
       </div>
     </div>
     <div class="carousel">
-        <div class="fade"></div>
-        <div class="logo-slide">
-            <img src="https://iili.io/dH0B2CF.png" alt="OS-basics" data-badge>
-            <img src="https://iili.io/dH0BJQ1.png" alt="Network" data-badge>
-            <img src="https://iili.io/dH0B3Eg.png" alt="Scrum" data-badge>
-            <img src="https://iili.io/dH0BGn9.jpg" alt="Linux" data-badge>
+      <div class="fade"></div>
+      <div class="logo-slide">
+        <div class="badges" v-for="badge in badges" :key="badge.title">
+          <img :src="badge.badge" alt="badge" data-badge>
         </div>
-        <div class="logo-slide">
-            <img src="https://iili.io/dH0B2CF.png" alt="OS-basics" data-badge>
-            <img src="https://iili.io/dH0BJQ1.png" alt="Network" data-badge>
-            <img src="https://iili.io/dH0B3Eg.png" alt="Scrum" data-badge>
-            <img src="https://iili.io/dH0BGn9.jpg" alt="Linux" data-badge>
+      </div>
+      <div class="logo-slide">
+        <div class="badges" v-for="badge in badges" :key="badge.title">
+          <img :src="badge.badge" alt="badge" data-badge>
         </div>
-        <div class="fade2"></div>
+      </div>
+      <div class="fade2"></div>
     </div>
   </div>
 </template>
@@ -110,6 +108,9 @@ export default {
     skills() {
       return this.$store.state.skills;
     },
+    badges() {
+      return this.$store.state.Badges;
+    },
     work() {
       return this.$store.state.work;
     },
@@ -118,6 +119,7 @@ export default {
     this.$store.dispatch("fetcheducation");
     this.$store.dispatch("fetchskills");
     this.$store.dispatch("fetchwork");
+    this.$store.dispatch("fetchBadges");
   }
 };
 </script>
@@ -456,7 +458,7 @@ export default {
   width: 70%;
   height: 250px;
   color: #67c7eb;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   position: relative;
 }
