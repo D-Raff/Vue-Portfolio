@@ -4,7 +4,7 @@
       <h2 class="Heading">Download my CV</h2>
       <button class="btn">
         <a
-          href="https://drive.google.com/file/d/1cjlMqf-MaxKiKpAG_qCj_BDRjgcJdy3A/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1yDz3OdzNhsCCwG0Wf5WCOtsZ1M7zfSNV/view?usp=drive_link"
           target="_blank"
           ><i class="fa-solid fa-circle-down"></i
         ></a>
